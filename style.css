@@ -384,6 +384,7 @@ footer {
   }
   
   #modal {
+    font-family: style;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -402,21 +403,49 @@ footer {
     height: 300px;
     float: left;
     margin-right: 25px;
+    
+  }
+
+  .tamanhos {
+    text-decoration: none;
   }
 
   .botoes_modal {
     display: flex;
     flex-direction: row;
+    margin-bottom: 25px;
   }
 
   .btn_modal {
     width: 40px;
     height: 40px;
-    margin-top: 10%;
+    margin-top: 7%;
     margin-right: 2.5%;
     border-radius: 100%;
     float: right;
   }
+
+  .btn_cor1 {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 251, 251);
+    border: 3px solid #b9b9b9;
+    margin-right: 2.5%;
+    border-radius: 100%;
+    float: right;
+  }
+
+  .btn_cor2 {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(12, 12, 12);
+    border: 3px solid #b9b9b9;
+    margin-right: 2.5%;
+    border-radius: 100%;
+    float: right;
+  }
+
+
   
   #fade, #modal {
     transition: 0.5s;
