@@ -423,6 +423,12 @@ footer {
     margin-right: 2.5%;
     border-radius: 100%;
     float: right;
+    transition: .3s;
+  }
+
+  .btn_modal:hover {
+    background-color: #31313159;
+    transition: .3s;
   }
 
   .btn_cor1 {
@@ -434,6 +440,7 @@ footer {
     border-radius: 100%;
     float: right;
   }
+
 
   .btn_cor2 {
     width: 40px;
