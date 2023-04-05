@@ -460,6 +460,12 @@ footer {
     pointer-events: all;
   }
   
+  .modal-header i  {
+    width: 20px;
+    height: 20px;
+
+  }
+
   .modal-header {
     display: flex;
     justify-content: space-between;
@@ -473,8 +479,7 @@ footer {
     margin-bottom: 1rem;
   }
   
-  #modal.hide,
-  #fade.hide {
+  #modal.hide, #fade.hide {
     opacity: 0;
     pointer-events: none;
   }
