@@ -498,6 +498,24 @@ footer {
     margin-bottom: 1rem;
   }
   
+  .button_modal {
+    width: 20%;
+    float: right;
+  }
+
+  .button_modal button {
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: all .4s;
+}
+
+ .button_modal button:hover {
+    background-color: rgb(53, 53, 53);
+    color: #b9b9b9;
+    transition: ease-out all .4s;
+ }
+
   #modal.hide, #fade.hide {
     opacity: 0;
     pointer-events: none;
