@@ -12,3 +12,17 @@ const toggleModal = () => {
   el.addEventListener("click", () => toggleModal());
 });
 
+
+const openModalButton2 = document.querySelector("#open-modal2");
+const closeModalButton2 = document.querySelector("#close-modal2");
+const modal2 = document.querySelector("#modal2");
+const fade2 = document.querySelector("#fade");
+
+const toggleModal2 = () => {
+  modal.classList.toggle("hide");
+  fade.classList.toggle("hide");
+};
+
+[openModalButton2, closeModalButton2, fade2].forEach((el) => {
+  el.addEventListener("click", () => toggleModal2());
+});
