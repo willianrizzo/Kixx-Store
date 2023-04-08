@@ -312,7 +312,7 @@ article a{
 
 #content p{
     width: 95%;
-    text-align: justify;
+    text-align: left;
     
     margin-bottom: 25px;
 }
