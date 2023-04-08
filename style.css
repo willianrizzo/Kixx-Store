@@ -392,7 +392,7 @@ footer {
     opacity: 1;
   }
   
-  #fade, #fade2 {
+  #fade {
     position: fixed;
     top: 0;
     left: 0;
@@ -402,7 +402,7 @@ footer {
     z-index: 5;
   }
   
-  #modal, #modal2 {
+  #modal, #modal2, #modal3 {
     font-family: style;
     position: fixed;
     left: 50%;
@@ -480,12 +480,19 @@ footer {
     pointer-events: all;
   }
 
-  #fade2, #modal2 {
+  #fade, #modal2 {
     transition: 0.5s;
     opacity: 1;
     pointer-events: all;
   }
   
+  #fade, #modal3 {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+
   .modal-header i  {
     width: 20px;
     height: 20px;
@@ -532,11 +539,20 @@ footer {
         top: 0;
     }
 
-    #modal2.hide, #fade2.hide {
+    #modal2.hide, #fade.hide {
         opacity: 0;
         pointer-events: none;
     }
         
     #modal2.hide {
+        top: 0;
+    }
+
+    #modal3.hide, #fade.hide {
+        opacity: 0;
+        pointer-events: none;
+    }
+        
+    #modal3.hide {
         top: 0;
     }
