@@ -392,7 +392,7 @@ footer {
     opacity: 1;
   }
   
-  #fade {
+  #fade, #fade2, #fade3, #fade4, #fade5, #fade6 {
     position: fixed;
     top: 0;
     left: 0;
@@ -402,7 +402,7 @@ footer {
     z-index: 5;
   }
   
-  #modal, #modal2, #modal3 {
+  #modal, #modal2, #modal3, #modal4, #modal5, #modal6 {
     font-family: style;
     position: fixed;
     left: 50%;
@@ -474,24 +474,11 @@ footer {
 
 
   
-  #fade, #modal {
+  #fade, #modal, #modal2, #fade2, #modal3, #fade3, #modal3, #fade4, #modal4, #fade5, #modal5, #fade6, #modal6 {
     transition: 0.5s;
     opacity: 1;
     pointer-events: all;
   }
-
-  #fade, #modal2 {
-    transition: 0.5s;
-    opacity: 1;
-    pointer-events: all;
-  }
-  
-  #fade, #modal3 {
-    transition: 0.5s;
-    opacity: 1;
-    pointer-events: all;
-  }
-  
 
   .modal-header i  {
     width: 20px;
@@ -530,29 +517,14 @@ footer {
     transition: ease-out all .4s;
  }
 
-    #modal.hide, #fade.hide {
+    #modal.hide, #fade.hide, #modal2.hide, #fade2.hide, #modal3.hide, #fade3.hide, #modal4.hide, #fade4.hide, #modal5.hide, #fade5.hide, #modal6.hide, #fade6.hide  {
         opacity: 0;
         pointer-events: none;
     }
     
-    #modal.hide {
+    #modal.hide, #modal2.hide, #modal3.hide, #modal4.hide, #modal5.hide, #modal6.hide {
         top: 0;
     }
 
-    #modal2.hide, #fade.hide {
-        opacity: 0;
-        pointer-events: none;
-    }
         
-    #modal2.hide {
-        top: 0;
-    }
 
-    #modal3.hide, #fade.hide {
-        opacity: 0;
-        pointer-events: none;
-    }
-        
-    #modal3.hide {
-        top: 0;
-    }
