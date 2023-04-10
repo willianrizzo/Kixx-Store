@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="carrinho.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-  <script src="carrinho.js"></script>
+  
 </head>
 
 <body>
@@ -38,20 +38,20 @@
                 <div class="product">
                   <img class="produto" src="/assets/calcacargo.png" alt="" />
                   <div class="info">
-                    <div class="name">Nome do produto</div>
-                    <div class="category">Categoria</div>
+                    <div class="name">Calça Cargo</div>
+                    <div class="category">Calças</div>
                   </div>
                 </div>
               </td>
-              <td>R$ 35,40</td>
+              <td>R$ <span id="preço1"></span></td>
               <td>
                 <div class="qty">
-                  <button><i class="bx bx-minus"></i></button>
-                  <span>2</span>
-                  <button><i class="bx bx-plus"></i></button>
+                  <button onclick="diminuirQuant1()"><i class="bx bx-minus"></i></button>
+                  <span id="quantidade1"></span>
+                  <button onclick="aumentarQuant1()"><i class="bx bx-plus"></i></button>
                 </div>
               </td>
-              <td></td>
+              <td>R$ <span id="total1"></span>,00</td>
               <td>
                 <button class="remove"><i class="bx bx-x"></i></button>
               </td>
@@ -61,20 +61,20 @@
                 <div class="product">
                   <img class="produto" src="/assets/camiseta_roxa_1.png" alt="" />
                   <div class="info">
-                    <div class="name">Nome do produto</div>
-                    <div class="category">Categoria</div>
+                    <div class="name">Camiseta HSWR</div>
+                    <div class="category">Camisetas</div>
                   </div>
                 </div>
               </td>
-              <td>R$ 35,40</td>
+              <td>R$ <span id ="preço2"></span></td>
               <td>
                 <div class="qty">
-                  <button><i class="bx bx-minus"></i></button>
-                  <span>2</span>
-                  <button><i class="bx bx-plus"></i></button>
+                  <button onclick="diminuirQuant2()"><i class="bx bx-minus"></i></button>
+                  <span id="quantidade2"></span>
+                  <button onclick="aumentarQuant2()"><i class="bx bx-plus"></i></button>
                 </div>
               </td>
-              <td></td>
+              <td>R$ <span id="total2"></span>,00</td>
               <td>
                 <button class="remove"><i class="bx bx-x"></i></button>
               </td>
@@ -84,20 +84,20 @@
                 <div class="product">
                   <img class="produto" src="/assets/camiseta_white.png" alt="" />
                   <div class="info">
-                    <div class="name">Nome do produto</div>
-                    <div class="category">Categoria</div>
+                    <div class="name">Camiseta HRWS</div> 
+                    <div class="category">Camisetas</div>
                   </div>
                 </div>
               </td>
               <td>R$ 100,00</td>
               <td>
                 <div class="qty">
-                  <button><i class="bx bx-minus"></i></button>
-                  <span>2</span>
-                  <button><i class="bx bx-plus"></i></button>
+                  <button onclick="diminuirQuant3()"><i class="bx bx-minus"></i></button>
+                  <span id="quantidade3"></span>
+                  <button onclick="aumentarQuant3()"><i class="bx bx-plus"></i></button>
                 </div>
               </td>
-              <td></td>
+              <td>R$ <span id="total3"></span>,00</td>
               <td>
                 <button class="remove"><i class="bx bx-x"></i></button>
               </td>
@@ -109,7 +109,7 @@
         <div class="box">
           <header>Resumo da compra</header>
           <div class="info">
-            <div><span>Sub-total</span><span>R$ 418</span></div>
+            <div><span>Sub-total</span><span>R$<span id="subTotal"></span>,00</span</div></div>
             <div><span>Frete</span><span>Gratuito</span></div>
             <div>
               <button>
@@ -120,7 +120,7 @@
           </div>
           <footer>
             <span>Total</span>
-            <span>R$ 418</span>
+            <span>R$ <span id="valorFinal"></span>,00</span>
           </footer>
         </div>
         <button>Finalizar Compra</button>
@@ -129,6 +129,8 @@
   </main>
 </body>
 
+
+<script src="carrinho.js"></script>
 <script>
 
 </script>
