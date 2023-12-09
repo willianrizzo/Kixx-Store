@@ -130,6 +130,8 @@ section h1{
 .produto img{
     border-radius: 10px;
     border: 0.2px solid rgba(0, 0, 0, 0.363);
+
+    
 }
 
 .produto p{
@@ -528,3 +530,16 @@ footer {
 
         
 
+#leo {
+    filter: grayscale(100%);
+}
+
+#hover_tshirt{
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+#hover_tshirt:hover{
+    opacity: 100;
+    transition: all 0.2s;
+}
